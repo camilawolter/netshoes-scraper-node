@@ -1,0 +1,41 @@
+# Arquivo gerado pelo Node.js para explicar a importância deste arquivo.
+# Para mais informações sobre como este arquivo funciona, veja: https://git-scm.com/docs/gitignore
+
+# Dependências
+# A pasta node_modules contém todos os pacotes baixados pelo npm.
+# Ela pode ser muito grande e deve ser sempre recriada com o comando `npm install`.
+/node_modules
+
+# Arquivos Gerados
+# O resultado do nosso script. Nunca versionamos arquivos que são gerados
+# pelo próprio código fonte.
+*.pdf
+
+# Logs
+# Arquivos de log de erros gerados pelos gerenciadores de pacote ou pela aplicação.
+npm-debug.log*
+yarn-error.log
+*.log
+
+# Variáveis de Ambiente
+# Arquivos .env contêm segredos e configurações específicas do ambiente (senhas, API keys).
+# É uma falha de segurança gravíssima versionar estes arquivos.
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+
+# Arquivos de Sistema Operacional
+# Arquivos gerados automaticamente pelo sistema operacional que não têm relação com o projeto.
+.DS_Store
+Thumbs.db
+
+# Diretórios de IDEs
+# Configurações específicas do ambiente de desenvolvimento do usuário.
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
